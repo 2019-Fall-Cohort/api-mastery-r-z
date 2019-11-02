@@ -1,5 +1,5 @@
-const RecipeDomain = require("../models/artist-domain");
-const RecipeModel = require("../models/artist-model");
+const RecipeDomain = require("../models/recipe-domain");
+const RecipeModel = require("../models/recipe-model");
 
 module.exports = {
   add(name, image, callback) {

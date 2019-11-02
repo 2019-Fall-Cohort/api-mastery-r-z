@@ -1,4 +1,4 @@
-const RecipeService = require("../services/artists-services");
+const RecipeService = require("../services/recipe-service");
 
 module.exports = {
   addNewRecipe(req, res) {

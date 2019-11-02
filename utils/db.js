@@ -1,7 +1,11 @@
 const mongoose = require("mongoose");
 
 mongoose.connect(
+  // Richard's DB
   "mongodb+srv://admin:admin@cluster007-rekop.mongodb.net/test?retryWrites=true&w=majority",
+
+  // Zack's DB
+  // "mongodb+srv://admin:passwordpassword@calico-host-khzco.mongodb.net/test?retryWrites=true&w=majority",
   { useNewUrlParser: true, useUnifiedTopology: true }
 );
 

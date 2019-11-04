@@ -22,13 +22,30 @@ module.exports = {
       res.json({ response })
     })
   },
+  getRecipe(req, res) {
+    
+    const recipeId = req.params.id;
 
+    RecipeService.findOne(recipeId, Recipe => {
+      res.json({ Recipe });
+    })
+  },
 
   getAllRecipes(req, res) {
     RecipeService.findAll(Recipes => {
       res.json({ Recipes });
     });
   },
+
+  updateRecipe(req, res) {
+    const recipeId = req.params.id;
+    const update = req.body;
+    
+    
+    RecipeService.updateField(recipeId, update, response => {
+      res.json({ response })
+    });
+  }
 
 
 };

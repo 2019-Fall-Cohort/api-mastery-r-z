@@ -3,7 +3,7 @@ var router = express.Router();
 const recipeController = require("../controllers/recipe-controller")
 
 /* GET all recipes */
-router.get('/', recipeController.getAllRecipes);
+router.get('/recipes', recipeController.getAllRecipes);
 
 router.get('/:id', recipeController.getRecipe);
 

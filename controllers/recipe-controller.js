@@ -9,8 +9,6 @@ module.exports = {
     RecipeService.add(name, image, response => {
       console.log("waiting for promise...")
       res.json({ response });
-    
-      // console.log({response})
     })
   },
 

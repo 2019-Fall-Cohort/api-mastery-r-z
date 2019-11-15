@@ -9,7 +9,7 @@ router.get('/:id', recipeController.getRecipe);
 
 router.patch('/:id', recipeController.updateRecipe);
 
-router.post('/', recipeController.addNewRecipe);
+router.post('/recipes', recipeController.addNewRecipe);
 
 router.delete('/', recipeController.deleteRecipe);
 
